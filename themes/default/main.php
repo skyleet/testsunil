@@ -235,7 +235,7 @@
 		</ul>
 	</div>
 	<div id="footer">
-		Powered by <a href="http://www.glype.com/">Glype</a>&reg; <!--[version]-->. Made with &hearts; by <a href="skyleet.github.io">Sunil</a>
+		Powered by <a href="http://www.glype.com/">Glype</a>&reg; <!--[version]-->. Made with &hearts; by <a href="http://skyleet.github.io">Sunil</a>
 	</div>
 </div>
 </body>
