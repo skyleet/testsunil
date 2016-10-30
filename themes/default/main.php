@@ -204,6 +204,12 @@
 
 		<!-- CONTENT START -->
 
+		<!--[error]-->
+
+		<h2 class="first">About</h2>
+
+		<!--[description]-->
+
 		<h2>Enter URL</h2>
 
 		<!--[index_above_form]-->
