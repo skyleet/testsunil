@@ -200,33 +200,9 @@
 </head>
 <body>
 <div id="wrapper">
-	<div id="header">
-		<h1><a href="index.php"><?php
-			# Just a bit of PHP to auto-color a multiple word name
-			global $themeReplace;
-			if (isset($themeReplace['site_name'])) {
-				$wc=0;
-				$words = explode(' ', $themeReplace['site_name']);
-				foreach ($words as $word) {
-					$wc++;
-					if ($wc%2==1) {
-						echo $word.' ';
-					} else {
-						echo '<span>'.$word.'</span> ';
-					}
-				}
-			}
-		?></a></h1>
-	</div>
 	<div id="content">
 
 		<!-- CONTENT START -->
-
-		<!--[error]-->
-
-		<h2 class="first">About</h2>
-
-		<!--[description]-->
 
 		<h2>Enter URL</h2>
 
