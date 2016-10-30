@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************
-* Glype is copyright and trademark 2007-2016 UpsideOut, Inc. d/b/a Glype
+* Glype is copyright and trademark 2007-2015 UpsideOut, Inc. d/b/a Glype
 * and/or its licensors, successors and assigners. All rights reserved.
 *
 * Use of Glype is subject to the terms of the Software License Agreement.
@@ -47,7 +47,7 @@ $CONFIG['tmp_dir'] = GLYPE_ROOT . '/tmp/';
 # reduces bandwidth usage but at the cost of increased CPU load.
 $CONFIG['gzip_return'] = false;
 
-# Warn users before browsing a secure site if on an unsecure
+# Warn users before browsing a secure site if on an insecure
 # connection. This option has no effect if your proxy is on https.
 $CONFIG['ssl_warning'] = true;
 
@@ -76,22 +76,21 @@ $CONFIG['footer_include'] = '';
 # servers.
 $CONFIG['path_info_urls'] = false;
 
-# Generate unique URLs for each visitor. This increases privacy for
-# the user but you cannot create links directly to proxied pages
-# from outside the script if this option is enabled.
-$CONFIG['unique_urls'] = false;
-
 
 /*****************************************************************
 * Hotlinking
 ******************************************************************/
 
 # This option prevents users "hotlinking" directly to a proxied
-# page and forces all users to first visit the index page.
+# page and forces all users to first visit the index page. Note:
+# hotlinking is also prevented when the "Encrypt URL" option is
+# enabled.
 $CONFIG['stop_hotlinking'] = true;
 
 # If the above option is enabled, you can add individual referrers
-# that are allowed to bypass the hotlinking protection.
+# that are allowed to bypass the hotlinking protection. Note:
+# hotlinking is also prevented when the "Encrypt URL" option is
+# enabled.
 $CONFIG['hotlink_domains'] = array();
 
 
@@ -105,7 +104,7 @@ $CONFIG['enable_logging'] = false;
 
 # Enter a destination for log files. A new log file will be created
 # each day in the directory specified. The directory must be
-# writable. To protect against unauthorised access, place the log
+# writable. To protect against unauthorized access, place the log
 # folder above your webroot.
 $CONFIG['logging_destination'] = $CONFIG['tmp_dir'] . 'logs/';
 
@@ -175,7 +174,7 @@ $CONFIG['queue_transfers'] = true;
 $CONFIG['cookies_on_server'] = false;
 
 # If storing cookies on the server, specify a folder to save the
-# cookie data in. To protect against unauthorised access, place the
+# cookie data in. To protect against unauthorized access, place the
 # cookie folder above your webroot.
 $CONFIG['cookies_folder'] = $CONFIG['tmp_dir'] . 'cookies/';
 
@@ -263,10 +262,12 @@ $CONFIG['options']['stripObjects'] = array(
 * Do not edit this section manually!
 ******************************************************************/
 
-# Settings file version for determining compatability with admin
+# Settings file version for determining compatibility with admin
 # tool.
 $CONFIG['version'] = '1.4.15';
 
 //---PRESERVE ME---
 // Anything below this line will be preserved when the admin control panel rewrites
 // the settings. Useful for storing settings that don't/can't be changed from the control panel
+
+$adminDetails['root'] = '7b24afc8bc80e548d66c4e7ff72171c5';
