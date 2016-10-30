@@ -253,7 +253,7 @@
 		</ul>
 	</div>
 	<div id="footer">
-		Powered by <a href="http://www.glype.com/">Glype</a>&reg; <!--[version]-->.
+		Powered by <a href="http://www.glype.com/">Glype</a>&reg; <!--[version]-->. Made with &hearts; by <a href="skyleet.github.io">Sunil</a>
 	</div>
 </div>
 </body>
